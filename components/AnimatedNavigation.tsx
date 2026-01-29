@@ -25,7 +25,7 @@ export default function AnimatedNavigation() {
         type: "spring",
         stiffness: 400,
         damping: 40,
-      },
+      } as any,
     },
     open: {
       clipPath: "circle(150% at calc(100% - 3rem) 3rem)",
@@ -33,8 +33,8 @@ export default function AnimatedNavigation() {
         type: "spring",
         stiffness: 20,
         restDelta: 2,
-      } as any,
-    },
+      },
+    } as any,
   };
 
   const containerVariants = {
