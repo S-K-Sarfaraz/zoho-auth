@@ -6,11 +6,9 @@ const handler = NextAuth({
         ZohoProvider({
             clientId: process.env.ZOHO_CLIENT_ID!,
             clientSecret: process.env.ZOHO_CLIENT_SECRET!,
-            authorization: {
-                params: {
-                    scope: "ZohoAccounts.profile.READ ZohoAccounts.email.READ",
-                },
-            },
+            authorization: "https://accounts.zoho.in/oauth/v2/auth?scope=ZohoAccounts.profile.READ%20ZohoAccounts.email.READ",
+            token: "https://accounts.zoho.in/oauth/v2/token",
+            userinfo: "https://accounts.zoho.in/oauth/user/info",
         }),
     ],
     pages: {
