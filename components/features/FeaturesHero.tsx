@@ -4,7 +4,7 @@ import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Float } from "@react-three/drei";
 import { motion } from "framer-motion";
-import * as random from "math-random";
+
 import * as THREE from "three";
 
 function ParticleSphere(props: any) {
