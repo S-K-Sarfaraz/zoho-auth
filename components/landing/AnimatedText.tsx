@@ -30,7 +30,7 @@ export default function AnimatedText({ text, className = "", delay = 0 }: Animat
         type: "spring",
         damping: 12,
         stiffness: 100,
-      },
+      } as const,
     },
     hidden: {
       opacity: 0,
@@ -39,7 +39,7 @@ export default function AnimatedText({ text, className = "", delay = 0 }: Animat
         type: "spring",
         damping: 12,
         stiffness: 100,
-      },
+      } as const,
     },
   };
 
