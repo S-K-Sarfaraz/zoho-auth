@@ -195,15 +195,15 @@ export default function HeroScroll() {
         {/* Cinematic Content Overlay */}
         <motion.div 
           style={{ opacity: buttonOpacity, pointerEvents: buttonPointerEvents as any }}
-          className="absolute inset-0 z-20 flex flex-col items-center justify-end pb-32"
+          className="absolute inset-0 z-20 flex flex-col items-center justify-end pb-20 md:pb-32"
         >
           <div className="text-center">
-             <h1 className="mb-6 text-6xl font-black uppercase tracking-tighter text-white drop-shadow-[0_0_25px_rgba(229,9,20,0.8)]">
+             <h1 className="mb-6 text-4xl sm:text-6xl font-black uppercase tracking-tighter text-white drop-shadow-[0_0_25px_rgba(229,9,20,0.8)]">
                Enter The Verse
              </h1>
              <button
                onClick={() => signIn("zoho", { callbackUrl: "/dashboard" })}
-               className="transform rounded-full bg-spider-red px-10 py-4 text-xl font-bold text-white shadow-[0_0_50px_rgba(229,9,20,0.6)] transition-all hover:scale-105 hover:bg-red-600 hover:shadow-[0_0_80px_rgba(229,9,20,0.8)] active:scale-95"
+               className="transform rounded-full bg-spider-red px-8 py-3 text-lg md:px-10 md:py-4 md:text-xl font-bold text-white shadow-[0_0_50px_rgba(229,9,20,0.6)] transition-all hover:scale-105 hover:bg-red-600 hover:shadow-[0_0_80px_rgba(229,9,20,0.8)] active:scale-95"
              >
                Access Dashboard
              </button>
